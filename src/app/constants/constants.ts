@@ -1,3 +1,3 @@
 
 export const apiKey = process.env.API_KEY
-export const baseUrl = process.env.RAW_API_URL
+export const baseUrl = process.env.RAWG_API_URL

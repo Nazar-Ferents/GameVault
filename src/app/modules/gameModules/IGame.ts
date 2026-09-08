@@ -1,6 +1,6 @@
 import {ICardGame} from "@/src/app/modules/gameModules/ICardGame";
 
-export interface IGame {
+export interface IGames {
   count: number;
   next: string | null;
   previous: string | null;

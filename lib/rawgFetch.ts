@@ -4,6 +4,7 @@ import {apiKey, baseUrl} from "@/src/app/constants/constants";
 
 export const rawgFetch = async (endpoint:string) => {
 
+
     const url = new URL(`${baseUrl}${endpoint}`)
 
     if(!apiKey) {
