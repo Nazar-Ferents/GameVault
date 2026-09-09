@@ -1,4 +1,4 @@
-import {ICardGame} from "@/src/app/modules/gameModules/ICardGame";
+import {ICardGame} from "@/src/app/modules/gameModules/GameListModules/ICardGame";
 
 export interface IGames {
   count: number;

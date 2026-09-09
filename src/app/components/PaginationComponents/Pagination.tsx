@@ -1,6 +1,6 @@
 'use client'
 
-import {IGames} from "@/src/app/modules/gameModules/IGame";
+import {IGames} from "@/src/app/modules/gameModules/GameListModules/IGames";
 import {FC} from "react";
 import {useRouter, useSearchParams} from "next/navigation";
 

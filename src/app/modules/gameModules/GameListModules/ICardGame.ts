@@ -1,5 +1,5 @@
-import {IPlatform} from "@/src/app/modules/gameModules/IPlatform";
-import {IGameGenre} from "@/src/app/modules/gameModules/IGameGenre";
+import {IPlatform} from "@/src/app/modules/gameModules/GameListModules/IPlatform";
+import {IGameGenre} from "@/src/app/modules/gameModules/GameListModules/IGameGenre";
 
 export interface ICardGame {
   id: number;

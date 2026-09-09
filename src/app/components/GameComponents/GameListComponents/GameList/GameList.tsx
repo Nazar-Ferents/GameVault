@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import {ICardGame} from "@/src/app/modules/gameModules/ICardGame";
+import {ICardGame} from "@/src/app/modules/gameModules/GameListModules/ICardGame";
 import GameCard from "@/src/app/components/GameComponents/GameListComponents/GameCard/GameCard";
 
 type PropsType = {

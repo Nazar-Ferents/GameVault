@@ -15,6 +15,7 @@ const GamePage:FC<PropsType> = async({searchParams}) => {
     const games = await getGames(page)
     return (
         <div>
+
             <Pagination meta={games} basePath={'/games'}/>
             <GameList data={games.results}/>
 
