@@ -11,6 +11,10 @@ const GameCard:FC<PropsType> = ({game}) => {
         return platform.platform.name
     })
 
+    const genre = game.genres.map(genre => {
+        return genre.name
+    })
+
     return (
         <div>
             <Link href={`/games/${game.id}`}>
@@ -18,6 +22,7 @@ const GameCard:FC<PropsType> = ({game}) => {
             <h1>{game.name}</h1>
             <p>Platform: {platform.join(' • ')}</p>
             <p>Rating: {game.rating}</p>
+            <p>Genres: {genre.join(' • ')}</p>
             </Link>
         </div>
     );

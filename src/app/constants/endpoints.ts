@@ -10,6 +10,14 @@ export const endpoints = {
         gameByID: (gameID:number)=>{
             return `games/${gameID}`
         }
+    },
+    genres:{
+        allGenres: ()=>{
+            return`genres`
+        },
+        genreByID: (page:number,genreID:number)=>{
+            return `games?page=${page}&page_size=10&genres=${genreID}`
+        }
     }
 
 

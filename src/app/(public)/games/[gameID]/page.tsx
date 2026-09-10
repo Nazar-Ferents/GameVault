@@ -2,6 +2,7 @@ import React, {FC} from 'react';
 import {Metadata} from "next";
 import {getGameByID} from "@/src/app/services/gameService";
 import GameDetailsCard from "@/src/app/components/GameComponents/GameDetailsComponants/GameDetailsCard";
+import {getGenres} from "@/src/app/services/genreService";
 
 type PropsType = {
     params: Promise<{[key:string]:string | string[] | undefined}>,
@@ -32,9 +33,11 @@ const GameDetailsPage:FC<PropsType> =async ({params}) => {
     const game = await getGameByID(gameID);
 
 
+
+
     return (
         <div>
-            <GameDetailsCard gameDetails={game} />
+            <GameDetailsCard gameDetails={game}  />
         </div>
     );
 };

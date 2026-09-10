@@ -5,6 +5,8 @@ const Header = () => {
     return (
         <header>
             <Link href={'/games'}>Games List</Link>
+            <br/>
+            <Link href={'/genres'}>Genres List</Link>
             
         </header>
     );

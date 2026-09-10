@@ -1,12 +1,12 @@
 'use client'
 
-import {IGames} from "@/src/app/modules/gameModules/GameListModules/IGames";
 import {FC} from "react";
 import {useRouter, useSearchParams} from "next/navigation";
+import {IGameGeneral} from "@/src/app/modules/gameModules/GameListModules/IGameGeneral";
 
 
 type PropsType = {
-    meta:IGames,
+    meta:IGameGeneral,
     basePath:string
 }
 const Pagination:FC<PropsType> = ({meta,basePath}) => {
@@ -14,6 +14,7 @@ const Pagination:FC<PropsType> = ({meta,basePath}) => {
     const router = useRouter()
     const searchParams = useSearchParams()
     const currentPage = Number(searchParams.get('page')??1)
+
 
     const changePage = (newPage:number)=>{
         const params = new URLSearchParams(searchParams.toString());

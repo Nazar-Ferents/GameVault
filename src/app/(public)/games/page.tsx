@@ -2,6 +2,7 @@ import React, {FC} from 'react';
 import {getGames} from "@/src/app/services/gameService";
 import GameList from "@/src/app/components/GameComponents/GameListComponents/GameList/GameList";
 import Pagination from "@/src/app/components/PaginationComponents/Pagination";
+import {getGenres} from "@/src/app/services/genreService";
 
 type PropsType = {
     searchParams: Promise<{[key:string]:string | string[] | undefined}>
@@ -13,11 +14,12 @@ const GamePage:FC<PropsType> = async({searchParams}) => {
     const page = Number(params.page || 1)
 
     const games = await getGames(page)
+
     return (
         <div>
 
             <Pagination meta={games} basePath={'/games'}/>
-            <GameList data={games.results}/>
+            <GameList data={games.results} />
 
         </div>
     );

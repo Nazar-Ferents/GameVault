@@ -18,7 +18,7 @@ export interface IGameDetails {
   name: string;
   name_original: string;
   description: string;
-  metacritic: number;
+  metacritic: number | null;
   metacritic_platforms: Metacritic_platforms[];
   released: string;
   tba: boolean;
@@ -64,7 +64,7 @@ export interface IGameDetails {
   genres: Genres[];
   tags: Tags[];
   publishers: Publishers[];
-  esrb_rating: Esrb_rating;
+  esrb_rating: Esrb_rating | null;
   clip?: string;
   description_raw: string;
 }
