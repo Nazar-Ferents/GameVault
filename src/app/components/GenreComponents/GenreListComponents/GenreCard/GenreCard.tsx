@@ -8,7 +8,7 @@ type PropsType = {
 const GenreCard:FC<PropsType> = ({genre}) => {
     return (
         <div>
-            <Link href={`/genres/${genre.id}`}>{genre.name}</Link>
+            <Link href={`/genres/${genre.slug}`}>{genre.name}</Link>
 
         </div>
     );

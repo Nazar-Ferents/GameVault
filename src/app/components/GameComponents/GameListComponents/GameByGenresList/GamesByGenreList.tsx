@@ -6,6 +6,8 @@ type PropsType = {
     data:ICardGame[];
 }
 
+
+
 const GamesByGenreList:FC<PropsType> = ({data}) => {
     return (
         <div>

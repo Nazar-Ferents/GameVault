@@ -17,8 +17,13 @@ export const getGameByID = async (gameID:number):Promise<IGameDetails> => {
 }
 
 
-export const getGameByGenre = async (page:number,genreID:number):Promise<IGames> => {
+export const getGameByGenre = async (page:number,genreSlug:string):Promise<IGames> => {
 
-    const response = await rawgFetch(endpoints.genres.genreByID(page,genreID));
+    const response = await rawgFetch(endpoints.games.gamesByGenre(page,genreSlug));
+    return await response.json();
+}
+
+export const getGameBySearch = async (page:number,title:string):Promise<IGames> => {
+    const response = await rawgFetch(endpoints.search.gamesBySearch(page,title));
     return await response.json();
 }
