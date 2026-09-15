@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
 import {IGameDetails} from "@/src/app/modules/gameModules/GameDetailsModules/IGameDetails";
-import Link from "next/link";
 import StarsComponent from "@/src/app/components/StarsComponents/StarComponent";
+import BadgeComponent from "@/src/app/components/BadgeComponents/BadgeComponent";
 
 type PropsType = {
     gameDetails:IGameDetails,
@@ -31,7 +31,7 @@ const GameDetailsCard:FC<PropsType> = ({gameDetails}) => {
                 <p>Platforms: {platform.join(' • ')}</p>
                 <p>Genres: </p>
                 {gameDetails.genres.map(genre => (
-                    <Link href={`/genres/${genre.slug}`} key={genre.id}>{genre.name}</Link>
+                    <BadgeComponent key={genre.id} link={`/genres/${genre.slug}`} name={genre.name} />
                 ))}
 
 

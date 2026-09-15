@@ -5,10 +5,24 @@
     line-height: 1;
 }
 
-.active {
+.full {
     color: gold;
 }
 
-.inactive {
+.empty {
     color: #444;
+
+
+}
+
+.part-container{
+    position: relative;
+
+}
+
+.part {
+    color: gold;
+    position: absolute;
+    overflow: hidden;
+
 }
