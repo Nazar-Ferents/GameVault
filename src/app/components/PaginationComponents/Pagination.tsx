@@ -3,6 +3,7 @@
 import {FC} from "react";
 import {useRouter, useSearchParams} from "next/navigation";
 import {IGameGeneral} from "@/src/app/modules/gameModules/GameListModules/IGameGeneral";
+import './pagination.css'
 
 
 type PropsType = {
@@ -22,9 +23,9 @@ const Pagination:FC<PropsType> = ({meta,basePath}) => {
         router.push(`${basePath}?${params.toString()}`)
     }
 
-    const totalPage = Math.ceil(meta.count / 10)
+    const totalPage = Math.ceil(meta.count / 12)
     return (
-        <div>
+        <div className='pagination'>
             <button onClick={()=>{
                 if(meta.previous === null){
                     return

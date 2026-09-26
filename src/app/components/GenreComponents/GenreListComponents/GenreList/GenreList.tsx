@@ -9,7 +9,7 @@ const GenreList:FC<PropsType> = ({data}) => {
 
 
     return (
-        <div>
+        <div className='genres-grid'>
             {
                 data.map((genre) => <GenreCard key={genre.id} genre={genre}/>)
             }

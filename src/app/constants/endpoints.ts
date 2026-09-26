@@ -5,13 +5,13 @@ export const endpoints = {
 
     games:{
         allGames: (page:number)=>{
-            return `games?page=${page}&page_size=10`
+            return `games?page=${page}&page_size=12`
         },
         gameByID: (gameID:number)=>{
             return `games/${gameID}`
         },
         gamesByGenre: (page:number,genreSlug:string)=>{
-            return `games?page=${page}&page_size=10&genres=${genreSlug}`
+            return `games?page=${page}&page_size=12&genres=${genreSlug}`
         }
     },
     genres:{
@@ -21,7 +21,7 @@ export const endpoints = {
     },
     search:{
         gamesBySearch: (page:number,title:string)=>{
-            return `games?page=${page}&page_size=10&search=${title}&ordering=-rating&search_precise=true&search_exact=true`
+            return `games?page=${page}&page_size=12&search=${title}&ordering=-rating&search_precise=true&search_exact=true`
         }
     }
 

@@ -42,8 +42,9 @@ const GamesByGenresPage:FC<PropsType> = async({params,searchParams}) => {
 
     return (
         <div>
-            <Pagination meta={gamesByGenre} basePath={`${genreSlug}`}/>
+
             <GamesByGenreList data={gamesByGenre.results}/>
+            <Pagination meta={gamesByGenre} basePath={`${genreSlug}`}/>
         </div>
     );
 };

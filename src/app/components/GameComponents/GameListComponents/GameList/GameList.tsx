@@ -10,7 +10,7 @@ const GameList:FC<PropsType> =  ({data}) => {
 
 
     return (
-        <div>
+        <div className='games-grid'>
             {
                 data.map((game) => (<GameCard key={game.id} game={game} />))
 

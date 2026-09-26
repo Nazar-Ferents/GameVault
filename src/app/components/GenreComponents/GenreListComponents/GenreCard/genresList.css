@@ -1,0 +1,33 @@
+.genre-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 180px;
+    padding: 24px 32px;
+
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+
+    transition: transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.genre-card a {
+    color: var(--text-primary);
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.genre-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent);
+    background: var(--surface-hover);
+}
+
+.genre-card:hover a {
+    color: var(--accent-hover);
+}

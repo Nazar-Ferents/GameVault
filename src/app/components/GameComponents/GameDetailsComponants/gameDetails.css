@@ -1,0 +1,154 @@
+.game-details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.game-details-header {
+    display: flex;
+    align-items: stretch;
+    gap: 24px;
+    width: 100%;
+    padding: 24px;
+
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.poster {
+    width: 40%;
+    max-width: 500px;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.game-details-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 12px;
+    flex: 1;
+    min-width: 0;
+}
+
+.game-details-main h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.game-details-main p {
+    color: var(--text-secondary);
+    font-size: 16px;
+}
+
+.game-details-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    width: 100%;
+    padding: 24px;
+
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.game-description {
+    color: var(--text-primary);
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.game-platforms {
+    color: var(--text-secondary);
+    font-size: 15px;
+}
+
+.game-details-genres {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    padding: 20px 24px;
+
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.game-details-genres > p {
+    color: var(--text-secondary);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.game-details-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.game-details-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 20px 24px;
+
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.game-details-meta p {
+    color: var(--text-secondary);
+    font-size: 15px;
+}
+
+.game-details-extra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 24px;
+
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.game-details-extra p {
+    color: var(--text-secondary);
+    font-size: 15px;
+}
+
+.game-details-extra a {
+    color: var(--accent);
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+.game-details-extra a:hover {
+    color: var(--accent-hover);
+}
+
+.game-details-tags {
+    padding: 20px 24px;
+
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.game-details-tags p {
+    color: var(--text-secondary);
+    font-size: 15px;
+}

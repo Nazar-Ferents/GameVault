@@ -1,5 +1,6 @@
 import React, {FC} from 'react';
 import Link from "next/link";
+import './badge.css'
 
 type PropsType = {
     link:string;

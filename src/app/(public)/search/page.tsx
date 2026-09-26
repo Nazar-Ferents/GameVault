@@ -19,8 +19,9 @@ const SearchPage:FC<PropsType> = async ({searchParams}) => {
     }
     return (
         <div>
-            <Pagination meta={games} basePath={'/search'} />
+
             <GameList data={games.results}/>
+            <Pagination meta={games} basePath={'/search'} />
 
         </div>
     );

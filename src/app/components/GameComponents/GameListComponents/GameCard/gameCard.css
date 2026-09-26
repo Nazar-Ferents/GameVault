@@ -1,0 +1,65 @@
+.game-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 16px 24px 16px;
+    gap: 20px;
+    transition: transform 0.3s ease;
+}
+
+.game-card-link {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+
+}
+.image-card {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 3/2;
+
+}
+
+.card-title{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.card-paragraph {
+    color: var(--text-secondary);
+}
+
+.card-genres {
+
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+}
+
+.game-card:hover{
+    transform: scale(1.02);
+
+}
+
+.none-photo {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+
+    color: var(--text-secondary);
+}
